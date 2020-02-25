@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Formulaire</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="bootstrap.css" type="text/css"> -->
+<style type="text/css">
+    .bs-example{
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Gestion R H</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Formulaire</a>
+                <a href="#" class="nav-item nav-link">Contact</a>
+                <a href="#" class="nav-item nav-link">Products</a>
+            </div>
+            <form class="form-inline ml-auto">
+                <input type="text" class="form-control mr-sm-2" placeholder="recherche">
+                <button type="submit" class="btn btn-outline-light">Rechercher</button>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <h2>Formulaire de Contact</h2>
+    <form action="/action_page.php">
+      <div class="form-group">
+            <label for="prenom">Votre Prenom et Nom:</label>
+            <input type="text" class="form-control" id="prenom" required="required"  name="prenom">
+            <span id="prenom_manquant"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Votre Adresse Email:</label>
+        <input type="email" class="form-control" id="email" required="required" name="email">
+        <span id="email_manquant"></span>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Votre Mot de Passe:</label>
+        <input type="password" class="form-control" id="pwd" required="required" name="pswd">
+        <span id="password_manquant"></span>
+      </div>
+      <div class="form-group">
+        <label for="tel">Numéro de Téléphone:</label>
+        <input type="text" class="form-control" id="tel" required="required" name="tel">
+        <span id="tel_manquant"></span>
+      </div>
+      <button type="submit" class="btn btn-primary" id="envoie">Valider</button>
+    </form>
+  </div>
+  <script src="test.js" type="text/javascript"></script>
+  
+</body>
+</html>                            
